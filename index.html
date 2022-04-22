@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HTML -->
+    <div class="container">
+      <input type="range" class="voice-control">
+      <h1 class="title">Ending - Isak Danielson</h1>
+      <div class="img-container">
+        <img
+          class="cover"
+          src="./album/Ending - Isak Danielson.jpg "
+          alt="music img"
+        />
+      </div>
+      <div class="progress-container">
+        <div class="progress"></div>
+      </div>
+      <audio class="audio" src="./music/Ending - Isak Danielson.mp3"></audio>
+      
+      <div class="navigation">
+        <button class="btn prev">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button class=" btn btn-big play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class=" btn next">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+      <!-- Script -->
+    <script src="app.js"></script>
+  </body>
+</html>

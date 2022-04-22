@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  background-image: url('https://images.unsplash.com/photo-1475924156734-496f6cac6ec1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  background-color: rgba(128, 128, 128, 0.238);
+  padding: 20px;
+  border-radius: 10px;
+}
+/* ................ */
+
+.title {
+  text-align: center;
+  color: #333333;
+}
+.img-container {
+  width: 180px;
+  height: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cover {
+  display: block;
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  object-fit: cover;
+  animation-name: rotateImg;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+@keyframes rotateImg {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container.play .cover {
+  animation-play-state: running;
+}
+
+.progress-container {
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: black;
+  height: 4px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.progress {
+  height: 4px;
+  width: 0%;
+  background-color: #005CC8;
+  border-radius: inherit;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.253);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.btn:not(:last-child) {
+  margin-right: 20px;
+}
+
+.btn {
+  border: 0;
+  background-color: transparent;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.btn-big {
+  font-size: 1.4rem;
+}
+
+
+.voice-control{
+  cursor: pointer;
+}
+
+/* .... */
+.prev {
+}
+.fas {
+}
+.fa-backward {
+}
+.play {
+}
+.fa-play {
+}
+.next {
+}
+.fa-forward {
+}
